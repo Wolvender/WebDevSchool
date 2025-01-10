@@ -1,0 +1,235 @@
+#container{
+    width: 936px;
+    display: flex;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #000;
+}
+
+#left{
+    width: 240px;
+    background-color: #f2f2f2;
+    height: 335px;
+    border: 2px solid #000;
+}
+
+#middle {
+    width: 568px;
+    height: 339px;
+    background-color: rgb(29, 29, 130);
+    padding: 35px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    color: rgb(29, 29, 130);
+
+    display: grid;
+    grid-template-areas:"Tijd treinSoort" 
+                        "Bestemming Bestemming" 
+                        "via via" 
+                        "treinlengte treinlengte"
+                        "VolgendeTrein VolgendeTrein" 
+                        "Ns_logo Ns_logo"
+}
+
+#right{
+    width:128px;
+    height: 335px;
+    background-color: rgb(29, 29, 130);
+    border: 2px solid #000;
+}
+
+#vakje{
+    background-color: white;
+    text-align: center;
+    height: 96px;
+    width: 96px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: rgb(29, 29, 130);;
+    font-weight: bold;
+    text-align: left;
+}
+
+#Spoornummer {
+    font-size: 48px;
+    text-align: left;
+    line-height: 10%;
+}
+
+#SpoorLetter {
+    height: 30px;
+    font-size: 24px;
+    line-height:40px ;
+    text-align: center;
+}
+
+
+#Blauwvakje {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(29, 29, 130);
+    float: left;
+}
+
+#Tijd{
+    display: none;
+    background-color: white;
+    grid-area: Tijd;
+    font-size: 30px;
+    font-weight:bold;
+    padding-left: 10px;
+} 
+
+#DigTijd {
+    background-color: white;
+    grid-area: Tijd;
+    font-size: 30px;
+    font-weight:bold;
+    padding-left: 10px;
+}
+
+#Ns_logo{
+    width:70px ;
+    height: 30px;
+    float: right;
+    grid-area: Ns_logo;
+}
+
+#treinSoort{
+
+    background-color: white;
+    grid-area: treinSoort;
+    font-size: 30px;
+    text-align: right;
+    font-weight:bold;
+
+}
+
+#VolgendeTrein{
+    background-color: rgb(16, 16, 87);
+    grid-area: VolgendeTrein;
+    padding-left: 10px;
+    width: 480px;
+    height: 25px;
+    border: solid black;
+    color:white
+    
+
+}
+
+#Bestemming {
+    background-color: white;
+    grid-area: Bestemming;
+    background-color: white;
+    font-size: 30px;
+    line-height: 10%;
+    font-weight:bold;
+    padding-left: 10px;
+}
+
+#via{
+    background-color:white;
+    grid-area: via;
+    font-weight:bold;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#treinlengte{
+    background-color: white;
+    grid-area: treinlengte;
+    padding-left: 50px;
+    padding-top: 10px;
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+.clock {
+    width: 180px;
+    height: 180px;
+    border: 10px solid rgb(203, 200, 200);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
+    margin-left: 20px;
+    margin-top: 20px
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); 
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    height: 4px; 
+    width: 40%; 
+    background-color: rgb(29, 29, 130);
+    position: absolute;
+    margin-left: 18px;
+    top: 50%; 
+    transform-origin: 100%; 
+    transform: rotate(90deg);
+    transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+.minute-hand {
+    height: 5px;
+    background-color: rgb(29, 29, 130);
+}
+
+.second-hand {
+    height: 2px;
+    background: red;
+}
+
+.number {
+    position: absolute;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.PointMiddel {
+    border-radius: 50%;
+    background-color: rgb(29, 29, 130);
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgb(29, 29, 130);
+    display: inline-block;
+    margin-left: 85px;
+    margin-top: 85px
+
+}
+
+
