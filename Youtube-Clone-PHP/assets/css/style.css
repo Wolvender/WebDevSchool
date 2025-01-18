@@ -1,0 +1,53 @@
+form label {
+    display: inline-block;
+    width: 100px; 
+    text-align: right;
+    margin-right: 10px; 
+}
+
+form input, form textarea {
+    width: 300px; 
+    padding: 8px;
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+    border: 1px solid #353434; 
+    border-radius: 4px; 
+    text-decoration: rgb(21, 21, 21)   ;
+}
+
+form textarea {
+    height: auto; 
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+#email, #username, #message {
+    color: rgb(188, 98, 98);
+} 
+
+#message {
+    float: left;
+}
+
+#YTImg {
+    width: 100px;
+    margin-bottom: 300px;
+}
+
+#Vid {
+    margin-bottom: 30px;
+}
+
+#Button {
+    margin-left: 110px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #7e7f80; 
+    color: rgb(188, 98, 98);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
